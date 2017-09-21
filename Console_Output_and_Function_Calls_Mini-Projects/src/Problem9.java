@@ -5,6 +5,7 @@
 
 import java.util.Scanner; //imports Scanner class
 
+//This program calculates the area of a trapezoid
 public class Problem9 {
 	
 	public static void main(String[] args){
@@ -16,9 +17,16 @@ public class Problem9 {
 		double height = input.nextDouble(); //sets height as a double
 		
 		System.out.print("Enter the length of the bottom base: "); //prompt user for length
-		double length = input.nextDouble(); //sets the length as a double
+		double bottomLength = input.nextDouble(); //sets the length as a double
 		
-		System.out.print("");
+		System.out.print("Enter the length of the top base: "); //prompt user for length 
+		double topLength = input.nextDouble(); //sets the legnth as a double
+		
+		double lengthSum = topLength + bottomLength; //half of calculation
+		double area = 0.5*lengthSum*height; //calculate area
+		System.out.println("The area is: " + area); //output the area
+		
+		input.close(); //close scanner
 		
 	}
 }
