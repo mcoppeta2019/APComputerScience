@@ -15,6 +15,7 @@ public class Problem7 {
 		 * If they were the length of a tab, I would have written \t instead of five spaces
 		*/
 		
+		//prints each individual line
 		System.out.println("     'much' better if you learn"); 
 		System.out.println("the rules of \"escape sequences.\""); 
 		System.out.println("     Also, \"\" represents an empty String.");
