@@ -10,7 +10,7 @@ public class Problem3 {
 		printImage();
 	}
 	
-	//series of functions to print the image
+	//series of methods to print the image
 	public static void printImage(){
 		printSlashes();
 		printText();
