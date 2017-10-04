@@ -57,8 +57,8 @@ public class IfStatementPractice {
 			if (Math.pow(side2,2)==(Math.pow(side1,2) + Math.pow(side3,2))){ //pythagorean theorem is correct
 				return true;
 			}
-		} else if (Math.max(Math.max(side1,side2),side3)==side3){
-			if (Math.pow(side3,2)==(Math.pow(side1,2) + Math.pow(side2,2))){
+		} else if (Math.max(Math.max(side1,side2),side3)==side3){ //side3 = hypotenuse
+			if (Math.pow(side3,2)==(Math.pow(side1,2) + Math.pow(side2,2))){ //pythagorean theorem is correct
 				return true;
 		}
 		return false; //no case is a right triangle
