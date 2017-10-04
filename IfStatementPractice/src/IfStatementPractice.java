@@ -46,7 +46,7 @@ public class IfStatementPractice {
 		return (String)(quotient + "r. " + remainder); 
 	}
 	
-	//
+	
 	//determines if three sides make up a right triangle or not
 	public static boolean isRightTriangle(int side1, int side2, int side3){
 		
