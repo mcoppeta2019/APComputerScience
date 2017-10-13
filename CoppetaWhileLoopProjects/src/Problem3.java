@@ -3,6 +3,7 @@
  * 	Michael Coppeta
  * 	This program 
  */
+
 public class Problem3 {
 
 }
