@@ -1,6 +1,7 @@
 /*
  * 	Problem 4
  * 	Michael Coppeta
+ * 
  * 	This program creates a guessing game that provides feedback until the correct answer is guessed
  */
 

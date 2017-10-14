@@ -1,6 +1,7 @@
 /*
  * 	Problem 3 (4-7, page 147)
  * 	Michael Coppeta
+ * 
  * 	Until the input is -1, this program will return 2 to the power of the user's input
  */
 

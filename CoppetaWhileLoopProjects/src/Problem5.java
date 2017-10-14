@@ -1,6 +1,7 @@
 /*
  * 	Problem 5
  * 	Michael Coppeta
+ * 
  * 	This program rolls two dice until their sum is equal to the inputed number
  */
 

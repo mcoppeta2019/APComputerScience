@@ -1,6 +1,7 @@
 /*
  * 	Problem 6
  * 	Michael Coppeta
+ * 
  * 	This program takes a number as input, then outputs the Collatz sequence until it reaches 1
  */
 
