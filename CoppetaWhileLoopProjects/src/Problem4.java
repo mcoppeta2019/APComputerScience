@@ -38,7 +38,7 @@ public class Problem4 {
 		System.out.println("It took you " + guessCount + " guess(es) to choose it!");
 	}
 	
-	//method to return a "random" number between the two parameters
+	//generates and returns a "random" number between min and max
 	public static int getRandInt(int min, int max){
 		
 		return (int)(Math.random()*((max - min) + 1)) + min; //returns the "random" int
