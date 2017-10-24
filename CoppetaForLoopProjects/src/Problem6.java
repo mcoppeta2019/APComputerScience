@@ -1,5 +1,5 @@
 /*
- * 	Problem 6 (CreditCardCheck.java)
+ * 	Problem 6 (Credit Card Check)
  * 	Michael Coppeta
  * 
  * 	This program checks an entered 8-digit credit card number to see if it is valid

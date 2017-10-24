@@ -20,11 +20,11 @@ public class Problem4 {
 		input.close(); //closes the scanner
 		
 		//calls method to print triangle
-		triangleLeft(size);
+		triangleRight(size);
 	}
 	
 	//creates method to prints a right justified triangle. Parameter indicates number of rows
-	public static void triangleLeft(int rows){
+	public static void triangleRight(int rows){
 		System.out.println(); //prints blank line between input and output
 		
 		for (int i = 1; i <= rows; i++){ //outer loop prints each individual row
