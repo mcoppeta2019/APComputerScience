@@ -28,6 +28,7 @@ public class Problem6 {
 		else System.out.println("\nThis credit card number is not valid."); //is not valid
 	}
 	
+	//this method verifies whether the card number (parameter) is valid, returns true or false
 	public static boolean checkCard(int cardNumber){
 		int sumEveryTwoFromRight = 0, sumEveryOther = 0, totalSum = 0; //declares variables to hold future sums
 		int currentDigit, currentSubDigit; //declares variable to hold current digit for later

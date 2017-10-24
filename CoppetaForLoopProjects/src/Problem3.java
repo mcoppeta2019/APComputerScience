@@ -23,7 +23,7 @@ public class Problem3 {
 		triangleLeft(size);
 	}
 	
-	//method to print trianlge. Parameter specifies the number of rows
+	//method to print triangle. Parameter specifies the number of rows
 	public static void triangleLeft(int rows){
 		System.out.println(); //prints a blank line between input and output
 		

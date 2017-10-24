@@ -28,8 +28,8 @@ public class Problem5 {
 	
 	//method to print the rectangle of user defined dimensions
 	public static void printRectangle(int width, int height){
-		//ASSUMPTION as to pattern:
-		//	+ are odd places, O are even places, not a repeating O+ pattern
+		//PATTERN:
+		//	+ -> O repeats on odd lines, O -> + on even lines. not a repeating O+ pattern
 		
 		System.out.println(); //prints blank line between input and output
 		
