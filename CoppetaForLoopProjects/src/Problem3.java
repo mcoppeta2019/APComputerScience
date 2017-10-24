@@ -3,6 +3,7 @@
  * 	Michael Coppeta
  * 
  * 	Prints a triangle of numbers of a user defined size (rows)
+ * 	NOTE: The input is expected to be an integer less than 10
  */
 
 import java.util.Scanner; //imports Scanner class
