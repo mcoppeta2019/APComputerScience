@@ -8,6 +8,7 @@
 import java.util.Scanner; //imports scanner class
 
 public class Problem2 {
+	
 	public static void main(String[] args){
 		int numGrades, average; //creates integer variable to hold number of grades and average
 		double gradeSum = 0; //creates variable to hold the sum of the grades
