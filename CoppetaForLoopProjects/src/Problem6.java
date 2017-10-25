@@ -11,7 +11,6 @@ public class Problem6 {
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in); //instantiates the scanner
 		int cardNumber; //declares variable to hold card number
-		boolean isValid; //declares variable to hold if it's valid or not
 		
 		//prompts user for credit card number
 		//ASSUMES: number is 8 digits, no spaces, only integers
@@ -19,12 +18,9 @@ public class Problem6 {
 		cardNumber = input.nextInt(); //stores in cardNumber variable
 		
 		input.close(); //closes Scanner
-		
-		//runs method to determine if card is valid or not
-		isValid = checkCard(cardNumber);
-		
-		//prints to the user whether it's valid or not
-		if (isValid) System.out.println("\nThis credit card number is valid."); //is valid
+
+		//prints to the user whether it's valid or not, calls method to determine
+		if (checkCard(cardNumber)) System.out.println("\nThis credit card number is valid."); //is valid
 		else System.out.println("\nThis credit card number is not valid."); //is not valid
 	}
 	
