@@ -25,7 +25,7 @@ public class Problem9 {
 		System.out.println(starOut(text));
 	}
 	
-	//this method returns a string that doesn't have the asterisks of the parameter or thier neighboring chars
+	//this method returns a string that doesn't have the asterisks of the parameter or their neighboring chars
 	public static String starOut(String text){
 		String returnString = ""; //creates variable to hold string to return
 		
