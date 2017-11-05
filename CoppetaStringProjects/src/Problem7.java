@@ -9,7 +9,7 @@ import java.util.Scanner; //imports the Scanner class
 
 public class Problem7 {
 
-	//main method gets user input, and prints the reverse order format of the inputed name
+	//main method gets user input, and calls processName method
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in); //instantiates the scanner
 		String name; //declares variable to hold user input

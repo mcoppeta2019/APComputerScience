@@ -9,7 +9,7 @@ import java.util.Scanner; //imports the scanner
 
 public class Problem8 {
 
-	//main method gets user input, and prints the return value of printReverse method
+	//main method gets user input, and calls printReverse method
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in); //instantiates the scanner
 		String text; //declares variable to hold user input
