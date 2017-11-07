@@ -12,12 +12,15 @@ public class Problem3 {
 	//main method gets user input, then calls method to return a 3-character long string
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in); //instantiates the scanner
-		String text; //declares variable to hold string, the user input
+		String text = ""; //declares variable to hold string, the user input
 		int index; //declares variable to hold index, the user input
 		
-		//gets user input
-		System.out.print("Please enter a string: "); //prompts user for text input
-		text = input.nextLine(); //stores in text variable
+		//gets user input - loops prompt until input is valid
+		while (text.length() < 3){
+			System.out.print("Please enter a string: "); //prompts user for text input
+			text = input.nextLine(); //stores in text variable
+		}
+		
 		System.out.print("Please enter an index: "); //prompts user for integer input
 		index = input.nextInt(); //stores in index variable
 		
