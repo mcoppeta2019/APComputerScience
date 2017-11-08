@@ -20,11 +20,15 @@ public class Problem7 {
 		
 		input.close(); //closes the scanner
 		
+		//prints part of the output
+		System.out.print("Your name in reverse order is ");
+		
 		//calls processName method, sends name as parameter, the method prints the result
 		processName(name);
 	}
 	
 	//this method takes a name as a parameter, then prints the name in the lastname, firstname format
+	//NOTE: This method prints only lastname, firstname. Not the prior output text
 	public static void processName(String name){
 		
 		//stores first name in variable
@@ -32,9 +36,6 @@ public class Problem7 {
 		
 		//stores last name in variable
 		String lastname = name.substring(name.indexOf(" ") + 1, name.length()); //last name is the text after the space
-		
-		//prints part of the output
-		System.out.print("Your name in reverse order is ");
 				
 		//prints the names in the reverse order
 		System.out.println(lastname + ", " + firstname + ".");
