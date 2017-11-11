@@ -4,6 +4,7 @@
  * 
  * 	Creates class file for Point
  */
+
 public class Point {
 
 	//Instance Variables
