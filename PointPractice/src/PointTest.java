@@ -1,3 +1,9 @@
+/*
+ * 	Point Test
+ * 	Michael Coppeta
+ * 
+ * 	Tests the Point class
+ */
 
 public class PointTest {
 	
