@@ -47,5 +47,11 @@ public class PointTest {
 		System.out.println(p2.getX() + " " + p2.getY()); //9.0 12.0
 		System.out.println(p3.getX() + " " + p3.getY()); //9.0 12.0
 		System.out.println(p4.getX() + " " + p4.getY()); //7.0 -14.0
+		
+		//tests toString() and equals()
+		System.out.println("\ntoString and equals");
+		System.out.println(p1 + "\n" + p2 + "\n" + p3 + "\n" + p4);
+		System.out.println("\n" + p1.equals(p2));
+		System.out.println(p2.equals(p3));
 	}
 }

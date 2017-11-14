@@ -71,7 +71,15 @@ public class Point {
 		return Math.sqrt(Math.pow(p.x - x, 2) + Math.pow(p.y - y, 2)); // (dx^2 + dy^2)^(1/2)
 	}
 	
+	//returns class instance variables in string form
+	public String toString(){
+		return ("X: " + x + "\nY: " + y);
+	}
 	
+	//returns whether two points have the same state
+	public boolean equals(Point p){
+		return ((x == p.x) && (y == p.y));
+	}
 
 }
 
