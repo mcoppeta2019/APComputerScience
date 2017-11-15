@@ -23,7 +23,7 @@ public class Book {
 		author = newAuthor;
 		genre = newGenre;
 	}
-	
+
 	//accepts title, and author only
 	public Book(String newTitle, String newAuthor){
 		this(0, 0, newTitle, newAuthor, "");
