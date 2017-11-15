@@ -73,7 +73,8 @@ public class Point {
 	
 	//returns class instance variables in string form
 	public String toString(){
-		return ("X: " + x + "\nY: " + y);
+		return ("(" + x + ", " + y + ")");
+		//return ("X: " + x + "\nY: " + y);
 	}
 	
 	//returns whether two points have the same state
