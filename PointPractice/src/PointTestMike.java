@@ -5,7 +5,7 @@
  * 	Tests the Point class
  */
 
-public class PointTest {
+public class PointTestMike {
 	
 	//Main method to test Point Class
 	public static void main(String[] args){
