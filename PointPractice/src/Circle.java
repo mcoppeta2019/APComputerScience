@@ -61,6 +61,8 @@ public class Circle {
 		center.setLocation(p.getX(), p.getY());
 	}
 	
+	//BEHAVIORS
+	
 	//inCircle method, determines if point is within circle
 	public boolean inCircle(Point p){
 		return (center.distance(p) <= radius);
