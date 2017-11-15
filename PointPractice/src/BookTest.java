@@ -8,6 +8,7 @@
 
 public class BookTest {
 
+	//main method for testing
 	public static void main(String[] args){
 		Book book1 = new Book(50, 2016, "The Name of the Book", "Vern", "Good Books");
 		Book book2 = new Book("Another Book", "Springer");
