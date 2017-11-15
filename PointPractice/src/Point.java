@@ -8,7 +8,7 @@
 public class Point {
 
 	//Instance Variables
-	double x, y;
+	private double x, y;
 	
 	//CONSTRUCTORS
 	
