@@ -81,6 +81,53 @@ public class Point {
 	public boolean equals(Point p){
 		return ((x == p.x) && (y == p.y));
 	}
+	
+	//returns the quadrant the point is in
+	public int quadrant(){
+		if (x>0 && y>0){
+			return 1;
+		} else if (x>0 && y<0){
+			return 4;
+		} else if (x<0 && y<0){
+			return 3;
+		} else if (x<0 && y>0){
+			return 2;
+		} else {
+			return 0;
+		}
+	}
+	
+	//returns if two points have the same x value
+	public boolean isVertical(Point other){
+		return (x==other.x);
+	}
 
+	//swaps x and y values and negates both
+	public void flip(){
+		double tempValue = x;
+		x = y * -1;
+		y = tempValue * -1;
+	}
+	
+	//rotates the point around a given point
+	public void rotate(double angle, int xCenter, int yCenter){
+		x = (Math.cos(angle) * (x - xCenter)) - (Math.sin(angle) * (y - yCenter)) + xCenter;
+		y = (Math.sin(angle) * (x - xCenter)) + (Math.cos(angle) * (y - yCenter)) + yCenter;
+	}
+	
+	//retunrs manhattan distance between two points
+	public double manhattanDistance(Point other){
+		return (Math.abs(x-other.x) + Math.abs(y-other.y));
+	}
+	
+	//returns slope between two points
+	public double slope(Point other){
+		return (other.y-y)/(other.x-x);
+	}
+	
+	//returns whether three points are collinear
+	public boolean isCollinear(Point p1, Point p2){
+		return (slope(p1) - p1.slope(p2) <= 0.00001);
+	}
 }
 
