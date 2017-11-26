@@ -1,5 +1,5 @@
 /*
- * 	Coppeta Tests
+ * 	Coppeta Bank Account Tests
  * 	Michael Coppeta
  * 
  * 	Tests the BankAccount class
