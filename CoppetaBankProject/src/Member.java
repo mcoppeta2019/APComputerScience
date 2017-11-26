@@ -119,10 +119,17 @@ public class Member {
 						toDeposit = input.nextDouble(); //stores input in variable
 						
 						//deposits the entered amount to the correct account
-						if (currentAccount == 1){
-							checking.deposit(toDeposit);
-						} else if (currentAccount == 2){
-							savings.deposit(toDeposit);
+						if (currentAccount == 1){ //checking account
+							checking.deposit(toDeposit); //makes deposit
+							
+							System.out.println("Deposit Successful! Your checking account now contains $" + 
+												checking.getBalance() + "."); //prints new balance
+							
+						} else if (currentAccount == 2){ //savings account
+							savings.deposit(toDeposit); //makes deposit
+							
+							System.out.println("Deposit Successful! Your savings account now contains $" + 
+												savings.getBalance() + ".");
 						}
 					}
 					
