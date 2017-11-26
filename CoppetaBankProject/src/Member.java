@@ -160,7 +160,7 @@ public class Member {
 						}
 					}
 					
-					else if (currentChoice == 3){ //user wants to add interest
+					else if (currentChoice == 3){ //user wants to add interest 
 						
 						//adds to correct account
 						if (currentAccount == 1){ //checking account
