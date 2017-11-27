@@ -166,13 +166,13 @@ public class Member {
 						if (currentAccount == 1){ //checking account
 							checking.addInterest(); //adds interest
 							
-							System.out.println("Your checking account now contains $" + 
+							System.out.println("Interest Added! Your checking account now contains $" + 
 												checking.getBalance() + "."); //prints new balance
 						
 						} else if (currentAccount == 2){ //savings account
 							savings.addInterest(); //adds interest
 							
-							System.out.println("Your savings account now contains $" + 
+							System.out.println("Interest Added! Your savings account now contains $" + 
 												savings.getBalance() + "."); //prints new balance
 						}
 					}
