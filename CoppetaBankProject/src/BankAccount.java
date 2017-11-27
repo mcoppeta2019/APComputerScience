@@ -59,7 +59,7 @@ public class BankAccount {
 	
 	//addInterest method, increases balance by (balance * interestRate)
 	public void addInterest(){
-		balance += (balance * interestRate);
+		balance += (balance * (interestRate/100));
 	}
 	
 	//withdraw method, reduces balance. Returns true if successful, 
