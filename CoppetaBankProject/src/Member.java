@@ -123,13 +123,13 @@ public class Member {
 							checking.deposit(toDeposit); //makes deposit
 							
 							System.out.println("Deposit Successful! Your checking account now contains $" + 
-												checking.getBalance() + "."); //prints new balance
+												(double)Math.round(checking.getBalance()*100)/100 + "."); //prints new balance
 							
 						} else if (currentAccount == 2){ //savings account
 							savings.deposit(toDeposit); //makes deposit
 							
 							System.out.println("Deposit Successful! Your savings account now contains $" + 
-												savings.getBalance() + ".");
+												(double)Math.round(savings.getBalance()*100)/100 + ".");
 						}
 					}
 					
@@ -143,7 +143,7 @@ public class Member {
 								
 								//tells the message it was successful, and prints new balance
 								System.out.println("Withdrawal Successful! Your checking account now contains $" + 
-													checking.getBalance() + ".");
+													(double)Math.round(checking.getBalance()*100)/100 + ".");
 							} else { //if withdrawal is unsuccessful 
 								System.out.println("Withdrawal Failed.");
 							}
@@ -153,7 +153,7 @@ public class Member {
 								
 								//tells the message it was successful, and prints new balance
 								System.out.println("Withdrawal Successful! Your savings account now contains $" +
-													savings.getBalance() + ".");
+													(double)Math.round(savings.getBalance()*100)/100 + ".");
 							} else { //if withdrawal is unsuccessful
 								System.out.println("Withdrawal Failed");
 							}
@@ -167,13 +167,14 @@ public class Member {
 							checking.addInterest(); //adds interest
 							
 							System.out.println("Interest Added! Your checking account now contains $" + 
-												checking.getBalance() + "."); //prints new balance
+												(double)Math.round(checking.getBalance()*100)/100 + "."); //prints new balance
 						
 						} else if (currentAccount == 2){ //savings account
 							savings.addInterest(); //adds interest
 							
 							System.out.println("Interest Added! Your savings account now contains $" + 
-												savings.getBalance() + "."); //prints new balance
+												(double)Math.round(savings.getBalance()*100)/100 + "."); //prints new balance
+							
 						}
 					}
 					
