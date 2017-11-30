@@ -1,7 +1,7 @@
 /*
  * 	Bank Account
  * 	Michael Coppeta
- * 
+ * 	
  * 	This class represents a basic bank account
  */
 
