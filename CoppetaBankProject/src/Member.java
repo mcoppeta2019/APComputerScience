@@ -114,6 +114,9 @@ public class Member {
 					
 					currentChoice = input.nextInt(); //gets input
 					
+					//	This line is used later to convert the balances to a 2 decimal max
+					//	(double)Math.round(checking.getBalance()*100)/100
+					
 					if (currentChoice == 1){ //user wants to deposit
 						System.out.print("How much would you like to deposit? "); //prompt for input
 						toDeposit = input.nextDouble(); //stores input in variable
