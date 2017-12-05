@@ -5,8 +5,7 @@ import java.util.Scanner;
  * @author Laurie White
  * @version April 2012
  */
-
-public class MagpieRunner2
+public class MagpieRunner3
 {
 
 	/**
@@ -14,7 +13,7 @@ public class MagpieRunner2
 	 */
 	public static void main(String[] args)
 	{
-		Magpie2 maggie = new Magpie2();
+		Magpie3 maggie = new Magpie3();
 		
 		System.out.println (maggie.getGreeting());
 		Scanner in = new Scanner (System.in);
@@ -26,7 +25,7 @@ public class MagpieRunner2
 			statement = in.nextLine();
 		}
 		
-		in.close(); 
+		in.close();
 	}
 
 }
