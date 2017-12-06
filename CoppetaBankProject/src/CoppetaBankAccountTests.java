@@ -51,5 +51,12 @@ public class CoppetaBankAccountTests {
 		
 		bankTwoArgs.addInterest(); //should be: 42.0
 		System.out.println("\nAdd Interest\n\t" + bankTwoArgs.getBalance());
+		
+		//tests new addInterest() with easy values
+		bankDefault.setInterestRate(0.1);
+		bankDefault.setBalance(100);
+		System.out.println("\n"+bankDefault); //100, 0.1%
+		bankDefault.addInterest();
+		System.out.println(bankDefault); //100.1, 0.1%
 	}
 }

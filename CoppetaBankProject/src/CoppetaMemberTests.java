@@ -19,6 +19,6 @@ public class CoppetaMemberTests {
 		System.out.println("Member Class\n\nConstructor and toString tests\n\n" + 
 							mikeCoppeta + "\n" + timWalker + "\n\n");
 		
-		timWalker.manage();
+		mikeCoppeta.manage();
 	}
 }

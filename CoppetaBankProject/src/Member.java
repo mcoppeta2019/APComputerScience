@@ -114,6 +114,9 @@ public class Member {
 					
 					currentChoice = input.nextInt(); //gets input
 					
+					//	This line is used later to convert the balances to a 2 decimal max
+					//	(double)Math.round(checking.getBalance()*100)/100
+					
 					if (currentChoice == 1){ //user wants to deposit
 						System.out.print("How much would you like to deposit? "); //prompt for input
 						toDeposit = input.nextDouble(); //stores input in variable
@@ -123,13 +126,13 @@ public class Member {
 							checking.deposit(toDeposit); //makes deposit
 							
 							System.out.println("Deposit Successful! Your checking account now contains $" + 
-												checking.getBalance() + "."); //prints new balance
+												(double)Math.round(checking.getBalance()*100)/100 + "."); //prints new balance
 							
 						} else if (currentAccount == 2){ //savings account
 							savings.deposit(toDeposit); //makes deposit
 							
 							System.out.println("Deposit Successful! Your savings account now contains $" + 
-												savings.getBalance() + ".");
+												(double)Math.round(savings.getBalance()*100)/100 + ".");
 						}
 					}
 					
@@ -143,7 +146,7 @@ public class Member {
 								
 								//tells the message it was successful, and prints new balance
 								System.out.println("Withdrawal Successful! Your checking account now contains $" + 
-													checking.getBalance() + ".");
+													(double)Math.round(checking.getBalance()*100)/100 + ".");
 							} else { //if withdrawal is unsuccessful 
 								System.out.println("Withdrawal Failed.");
 							}
@@ -153,7 +156,7 @@ public class Member {
 								
 								//tells the message it was successful, and prints new balance
 								System.out.println("Withdrawal Successful! Your savings account now contains $" +
-													savings.getBalance() + ".");
+													(double)Math.round(savings.getBalance()*100)/100 + ".");
 							} else { //if withdrawal is unsuccessful
 								System.out.println("Withdrawal Failed");
 							}
@@ -166,14 +169,15 @@ public class Member {
 						if (currentAccount == 1){ //checking account
 							checking.addInterest(); //adds interest
 							
-							System.out.println("Your checking account now contains $" + 
-												checking.getBalance() + "."); //prints new balance
+							System.out.println("Interest Added! Your checking account now contains $" + 
+												(double)Math.round(checking.getBalance()*100)/100 + "."); //prints new balance
 						
 						} else if (currentAccount == 2){ //savings account
 							savings.addInterest(); //adds interest
 							
-							System.out.println("Your savings account now contains $" + 
-												savings.getBalance() + "."); //prints new balance
+							System.out.println("Interest Added! Your savings account now contains $" + 
+												(double)Math.round(savings.getBalance()*100)/100 + "."); //prints new balance
+							
 						}
 					}
 					
