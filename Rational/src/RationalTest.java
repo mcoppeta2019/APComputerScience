@@ -3,6 +3,7 @@
  * 	Michael Coppeta
  * 	Tests the Rational Class
  */
+
 public class RationalTest {
 
 	public static void main(String[] args){
