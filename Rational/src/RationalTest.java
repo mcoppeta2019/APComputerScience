@@ -14,3 +14,4 @@ public class RationalTest {
 		System.out.println("toString\n" + a + "\n" + b + "\n" + c);
 	}
 }
+

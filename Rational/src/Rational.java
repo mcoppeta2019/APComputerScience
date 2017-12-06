@@ -104,3 +104,4 @@ public class Rational {
 		return numerator + "/" + denominator;
 	}
 }
+
