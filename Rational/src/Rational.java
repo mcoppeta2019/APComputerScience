@@ -47,6 +47,7 @@ public class Rational {
 	//mutator for numerator
 	public void setNumerator(int newNumerator){
 		numerator = newNumerator;
+		reduce();
 	}
 	
 	//accessor for denominator
@@ -57,9 +58,49 @@ public class Rational {
 	//mutator for denominator
 	public void setDenominator(int newDenominator){
 		denominator = newDenominator;
+		reduce();
 	}
 	
 	//BEHAVIORS
+	
+	//divide method
+	public Rational divide(Rational other){
+		other = other.reciprocal();
+		return multiply(other);
+	}
+	
+	//multiply method
+	public Rational multiply(Rational other){
+		int newNum, newDen;
+		
+		newNum = numerator * other.numerator;
+		newDen = denominator * other.denominator;
+		
+		Rational product = new Rational(newNum, newDen);
+		return product;
+	}
+	
+	//subtract method
+	public Rational subtract(Rational other){
+		int newNum, newDen;
+		
+		newNum = numerator * other.denominator - denominator * other.numerator;
+		newDen = denominator * other.denominator;
+			
+		Rational addend = new Rational(newNum, newDen);
+		return addend;
+	}
+	
+	//add method
+	public Rational add(Rational other){
+		int newNum, newDen;
+		
+		newNum = numerator * other.denominator + denominator * other.numerator;
+		newDen = denominator * other.denominator;
+		
+		Rational addend = new Rational(newNum, newDen);
+		return addend;
+	}
 	
 	//reciprocal function returns the recipricol of a rational
 	public Rational reciprocal(){
