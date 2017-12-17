@@ -22,16 +22,17 @@ public class Problem2 {
 	//assumes the two arrays are of the same length
 	public static void swapAll(int[] a1, int[] a2) {
 		
-		int[] temp = Arrays.copyOf(a1, a1.length); //makes temp array which is a copy of a1
+		//creates temporary int array to hold a1 values
+		int[] temp = Arrays.copyOf(a1, a1.length);
 		
-		//stores copy of a2 in a1
-		a1 = Arrays.copyOf(a2, a2.length); 
+		//loops through a2
+		for (int i = 0; i < a2.length; i++) {
+			a1[i] = a2[i]; //stores the a2 values in a1
+		}
 		
-		//stores copy of temp (a1) in a2
-		a2 = Arrays.copyOf(temp, temp.length);
-	
-		/*
-		 * FIX THIS
-		 */
+		//loops through temp
+		for (int i = 0; i < temp.length; i++) {
+			a2[i] = temp[i]; //stores the temp values (the original a1 valuels) in a2
+		}
 	}
 }
