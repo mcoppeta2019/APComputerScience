@@ -29,6 +29,7 @@ public class DealershipTest {
 		//System.out.println(dealer.inStock(a)); //false
 		
 		//test buy
+		dealer.buyCar(a);
 		dealer.buyCar(eq);
 		System.out.println("\n"+dealer);
 		
