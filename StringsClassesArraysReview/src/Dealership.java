@@ -71,4 +71,29 @@ public class Dealership {
 		return false; //return false if it had not shown up yet
 	}
 	
+	//buy method removes a car from carArray if it is in it
+	public void buyCar(Car obj){
+		if (inStock(obj)){ //if car is in dealer
+			for (int i = 0; i < carArray.length; i++){ //remove it
+				if (carArray[i].toString().equals(obj.toString())){ //if they are equal
+					carArray[i] = null;
+				}
+			}
+			
+			Car[] newCarArray = new Car[carArray.length - 1];
+			
+			int counter = 0;
+			for (int i = 0; i < carArray.length; i++){
+				if (carArray[i] != null){
+					newCarArray[counter] = carArray[i];
+					counter++;
+				}
+			}
+			
+			carArray = newCarArray;
+		} else {
+			System.out.println("That Car is not in stock");
+		}
+	}
+	
 }

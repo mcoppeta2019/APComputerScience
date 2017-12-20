@@ -15,6 +15,7 @@ public class Car {
 		this(0,"","","");
 	}
 	
+	
 	//constructor with all information given
 	public Car(int newYear, String newMake, String newModel, String newColor){
 		year = newYear;

@@ -28,5 +28,9 @@ public class DealershipTest {
 		System.out.println(dealer.inStock(dreamCar)); //true
 		//System.out.println(dealer.inStock(a)); //false
 		
+		//test buy
+		dealer.buyCar(eq);
+		System.out.println("\n"+dealer);
+		
 	}
 }
