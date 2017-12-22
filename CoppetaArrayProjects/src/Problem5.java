@@ -1,6 +1,6 @@
 //	Problem 5
 //	Michael Coppeta
-// 	This program 
+// 	This program determines the smallest gap between adjacent elements of an integer array
 
 public class Problem5 {
 
