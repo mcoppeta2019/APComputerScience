@@ -9,7 +9,7 @@ public class Problem4 {
 		
 		//testing - copied from problem 4 description
 		int[] a1 = {14, 1, 22, 17, 36, 7, -43, 5};
-		System.out.println(countInRange(a1, 4, 7)); //should be 2 
+		System.out.println(countInRange(a1, 4, 17)); //should be 4
 	
 	}
 	
