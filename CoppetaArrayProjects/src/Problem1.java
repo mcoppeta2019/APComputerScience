@@ -11,11 +11,14 @@ public class Problem1 {
 		
 		//testing
 		int[] a1 = {12, 34, 56}; //test array
+		int[] a2 = {0,8,2,3,4,5,6,7,1,9};
 		swap(a1, 1, 2); //swaps second and third element
 		System.out.println(Arrays.toString(a1)); //prints result: [12, 56, 34]
 		
 		swap(a1, 0, 2);
 		System.out.println(Arrays.toString(a1)); // [34, 56, 12]
+		swap(a2, 1, 8);
+		System.out.println(Arrays.toString(a2)); //1-9
 		
 		swap(a1, -5, 1); //invalid parameters
 		swap(a1, 2, 3);
