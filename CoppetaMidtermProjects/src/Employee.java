@@ -12,8 +12,8 @@ public class Employee {
 	private String lastName;
 	private boolean salaried; //true if salaried, false if hourly
 	private double wage; //yearly pay if salaried, hourly pay if hourly
-	private double earnings = 0.0; //total amount of money an employee has earned
-	private double vacationTime = 0.0; //stores the amount of vacation time (in hours)
+	private double earnings; //total amount of money an employee has earned
+	private double vacationTime; //stores the amount of vacation time (in hours)
 	
 	//CONSTRUCTORS
 	
@@ -26,6 +26,9 @@ public class Employee {
 		lastName = newLastName;
 		salaried = newSalaried;
 		wage = newWage;
+		
+		earnings = 0.0;
+		vacationTime = 0.0;
 	}
 	
 	//this constructor takes only the first name and last name
@@ -38,6 +41,9 @@ public class Employee {
 		//these values are implied based on parameters
 		salaried = false;
 		wage = 11.0;
+		
+		earnings = 0.0;
+		vacationTime = 0.0;
 		
 		//the method is the equivalent of calling:
 		// this(newFirstName, newLastName, false, 11.0);
@@ -58,6 +64,9 @@ public class Employee {
 		} else {	//if salaried is false, and the pay is hourly
 			wage = 11.0;
 		}
+		
+		earnings = 0.0;
+		vacationTime = 0.0;
 	}
 	
 	//ACCESSORS and MUTATORS
@@ -127,7 +136,7 @@ public class Employee {
 	//this method returns the instance variables in the form of a String
 	public String toString(){
 		String toReturn; //initializes the variable
-		toReturn = ("{" + lastName + ", " + firstName + "; "); //adds names
+		toReturn = ("{Name: " + lastName + ", " + firstName + "; "); //adds names
 		
 		//adds appropriate term based on value of salaried
 		if (salaried){ //if salaried
@@ -137,9 +146,39 @@ public class Employee {
 		}
 		
 		toReturn += "earnings: $" + earnings + "; vacation time: " +
-					vacationTime + " hours";
+					vacationTime + " hours}"; //adds remaining instance variables
 		
-		FINISH AND CHECK
+		return toReturn; //returns string
+	}
+	
+	//this method increases earnings depending on their salary type, and adds to vacation time
+	public void pay(int hours) {
+		int hoursOver = hours - 40; //hours over 40
+		
+		if (salaried) { //if they have a yearly salary
+			earnings += (double) wage / 52;
+		} else { //if they have an hourly wage
+			
+			if (hoursOver >= 0) { //if they work 40 or more hours in a week
+				earnings += 40 * wage; //the regular wage for the first 40 hours
+				earnings += hoursOver * wage * 1.5; //time and a half for remaining hours
+		
+			} else { //if they work less than 40 hours in a week
+				earnings += wage * hours;
+			}
+		}
+		
+		vacationTime += 1.89; //adds to vacation time
+	}
+	
+	//this method represents an employee taking vacation time, if it is possible
+	public void takeVacation(int hours) {
+		
+		if (vacationTime >= hours) { //reduces vacationTime by hours if they have enough time
+			vacationTime -= hours; 
+		} else { //prints error message if employee doesn't have enough vacation time
+			System.out.println("Employee does not have the desired amount of vacation time!");
+		}
 		
 		
 	}
