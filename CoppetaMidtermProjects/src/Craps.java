@@ -2,6 +2,7 @@
 // 	Michael Coppeta
 //
 //	This program simulates a simplified game of Craps
+//	The computer plays one full game per run of the program
 
 public class Craps {
 
@@ -57,12 +58,13 @@ public class Craps {
 		
 	}
 	
-	//this method return the value of a dice roll, 1-6
+	//this method returns the value of a dice roll, 1-6
 	public static int roll() { 
 		return randInt(1, 6);
 	}
 	
 	//returns a random integer between a and b, inclusive
+	//takes a and b and integer parameters
 	public static int randInt(int a, int b) {
 		return a + (int)((b - a + 1) * Math.random());
 	}

@@ -1,7 +1,7 @@
 //	ACSL.java
 //	Michael Coppeta
 //
-//	This program forms the plural and suffixes to given words, where A, S, C, and L are the vowel,
+//	This program forms the plural and suffixes to given words, where A, S, C, and L are the vowels,
 //	And different grammar rules are followed. 
 
 import java.util.Scanner; //imports the scanner
@@ -17,9 +17,9 @@ public class ACSL {
 		
 		//prompts the user for input, and stores in corresponding variables
 		System.out.print("Word: ");
-		word = input.nextLine();
+		word = input.nextLine().toUpperCase();
 		System.out.print("Suffix: ");
-		suffix = input.nextLine();
+		suffix = input.nextLine().toUpperCase();
 		
 		input.close(); //closes scanner object
 		
@@ -28,6 +28,7 @@ public class ACSL {
 	}
 	
 	//this method manipulates the word and suffix to print correct plural and suffix
+	//takes in the word and suffix, and outputs the two formed words
 	public static void formWords(String word, String suffix) {
 		String[] vowels = {"A", "C", "S", "L"}; //String array to hold vowel characters
 		
@@ -107,6 +108,7 @@ public class ACSL {
 	}
 	
 	//this method returns whether or not a given array contains a given value
+	//takes an array, and a desired value, returns a boolean
 	public static boolean arrayContains(String[] array, String value) {
 		
 		for (String str : array) { //loops through array values
@@ -120,6 +122,7 @@ public class ACSL {
 	
 	//this method returns the parameter but with the leftmost letter of the 
 	//	final sequence of vowels or consonants in the parameter
+	//takes in a string, and an array (to send to another method), and returns a modified string
 	public static String dropChain(String str, String[] vowels){
 		int i = str.length()-1; //counter
 		

@@ -17,7 +17,7 @@ public class Employee {
 	
 	//CONSTRUCTORS
 	
-	//this constructor takes first name, last name, salaried, and a wage
+	//this constructor takes first name, last name, salaried, and a wage as parameters
 	public Employee(String newFirstName, String newLastName, 
 			boolean newSalaried, double newWage){
 		
@@ -31,7 +31,7 @@ public class Employee {
 		vacationTime = 0.0;
 	}
 	
-	//this constructor takes only the first name and last name
+	//this constructor takes only the first name and last name as parameters
 	public Employee(String newFirstName, String newLastName){
 		
 		//stores the parameter values in their corresponding instance variables
@@ -49,7 +49,7 @@ public class Employee {
 		// this(newFirstName, newLastName, false, 11.0);
 	}
 	
-	//this constructor takes first name, last name, and salaried
+	//this constructor takes first name, last name, and salaried as parameters
 	public Employee(String newFirstName, String newLastName, 
 			boolean newSalaried){
 		
@@ -76,7 +76,7 @@ public class Employee {
 		return firstName;
 	}
 	
-	//mutator for firstName
+	//mutator for firstName, takes new value
 	public void setFirstName(String newFirstName){
 		firstName = newFirstName;
 	}
@@ -86,7 +86,7 @@ public class Employee {
 		return lastName;
 	}
 	
-	//mutator for lastName
+	//mutator for lastName, takes new value
 	public void setLastName(String newLastName){
 		lastName = newLastName;
 	}
@@ -96,7 +96,7 @@ public class Employee {
 		return salaried;
 	}
 	
-	//mutator for salaried
+	//mutator for salaried, takes new value
 	public void setSalaried(boolean newSalaried){
 		salaried = newSalaried;
 	}
@@ -106,7 +106,7 @@ public class Employee {
 		return wage;
 	}
 	
-	//mutator for wage
+	//mutator for wage, takes new value
 	public void setWage(double newWage){
 		wage = newWage;
 	}
@@ -116,7 +116,7 @@ public class Employee {
 		return earnings;
 	}
 	
-	//mutator for earnings
+	//mutator for earnings, takes new value
 	public void setEarnings(double newEarnings){
 		earnings = newEarnings;
 	}
@@ -126,7 +126,7 @@ public class Employee {
 		return vacationTime;
 	}
 	
-	//mutator for vacationTime
+	//mutator for vacationTime, takes new value
 	public void setVacationTime(double newVacationTime){
 		vacationTime = newVacationTime;
 	}
@@ -152,6 +152,7 @@ public class Employee {
 	}
 	
 	//this method increases earnings depending on their salary type, and adds to vacation time
+	//takes hours as a parameter
 	public void pay(int hours) {
 		int hoursOver = hours - 40; //hours over 40
 		
@@ -172,6 +173,7 @@ public class Employee {
 	}
 	
 	//this method represents an employee taking vacation time, if it is possible
+	//takes hours as a parameter
 	public void takeVacation(int hours) {
 		
 		if (vacationTime >= hours) { //reduces vacationTime by hours if they have enough time
@@ -179,7 +181,5 @@ public class Employee {
 		} else { //prints error message if employee doesn't have enough vacation time
 			System.out.println("Employee does not have the desired amount of vacation time!");
 		}
-		
-		
 	}
 }
