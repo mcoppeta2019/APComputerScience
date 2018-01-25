@@ -25,6 +25,28 @@ public class IntArrayWorker
 	return count;
   }
   
+  //getLargest method returns the largest element in the matrix
+  public int getLargest(){
+	  int cLargest = matrix[0][0];
+	  for(int[] row : matrix){
+		  for(int col : row){
+			  if(col > cLargest){
+				  cLargest = col;
+			  }
+		  }
+	  }
+	  return cLargest;
+  }
+  
+  //this method returns the sum of a parameter-specified column
+  public int getColTotal(int column){
+	  int sum = 0;
+	  for(int i = 0; i<matrix.length; i++){
+		  sum+=matrix[i][column];
+	  }
+	  return sum;
+  }
+  
   /**
    * Method to return the total 
    * @return the total of the values in the array
