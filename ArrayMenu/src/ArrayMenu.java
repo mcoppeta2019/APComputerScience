@@ -1,6 +1,6 @@
 //	Array Menu
 // 	Michael Coppeta
-//	Simulates a menu	
+//	Simulates a shopping list	
 
 import java.util.*; //imports all necessary classes
 
@@ -9,7 +9,8 @@ public class ArrayMenu {
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
 		List<String> menu = new ArrayList<String>();
-		String command = "";	
+		String command = "";
+		
 		do{
 			String item = "";
 			System.out.print("Add, remove, print, or exit menu: ");
@@ -33,7 +34,8 @@ public class ArrayMenu {
 				System.out.println();
 				
 			} else if(command.trim().toLowerCase().equals("print")){
-				System.out.println(Arrays.toString(menu.toArray()));
+				System.out.println("\tShopping List -> " +
+							Arrays.toString(menu.toArray()));
 				System.out.println();
 				
 			} else if(command.trim().toLowerCase().equals("exit")){
