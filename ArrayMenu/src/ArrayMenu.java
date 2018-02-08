@@ -30,7 +30,7 @@ public class ArrayMenu {
 				} else if(item.trim().toLowerCase().equals("item")){
 					System.out.print("\t\tWhat category?\t ");
 					type = input.nextLine();
-					
+					//WORK HERE//
 					
 				} else {
 					System.out.println("\tInvalid Input");
