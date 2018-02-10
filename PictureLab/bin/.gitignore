@@ -1,3 +1,5 @@
+/ColorChooser.class
+/DigitalPicture.class
 /FileChooser.class
 /ImageDisplay.class
 /IntArrayWorker.class
@@ -15,3 +17,6 @@
 /PictureTester.class
 /Pixel.class
 /SimplePicture.class
+/doc/
+/leftArrow.gif
+/rightArrow.gif
