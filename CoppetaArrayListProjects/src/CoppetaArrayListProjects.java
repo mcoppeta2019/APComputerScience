@@ -10,57 +10,7 @@ public class CoppetaArrayListProjects {
 
 	//main method for testing the other methods
 	public static void main(String[] args){
-		List<String> myList = new ArrayList<String>();
-		myList.add("thomas"); myList.add("cat"); myList.add("fig");
-		myList.add("buttons"); myList.add("fIG"); myList.add("f");
 		
-		//test addStars
-		addStars(myList); //12 elements, every other is a star
-		System.out.println(Arrays.toString(myList.toArray()));
-		
-		//test removeStars
-		removeStars(myList); //original 6 elements
-		System.out.println(Arrays.toString(myList.toArray()));
-		
-		//test reverseList
-		reverseList(myList); //reversed
-		System.out.println(Arrays.toString(myList.toArray()));
-		
-		//tests removeFigs
-		removeFigs(myList); //removes two fig elements
-		System.out.println(Arrays.toString(myList.toArray()));
-		
-		//tests capitalize... method
-		capitalizeReversePlurals(myList); //reverses 2 elements
-		System.out.println(Arrays.toString(myList.toArray()));
-		
-		//tests removeEvenLength
-		removeEvenLength(myList); //removes thomas
-		System.out.println(Arrays.toString(myList.toArray()));
-		
-		//adds a few elements
-		myList.add("buttons"); myList.add("fIG"); 
-		System.out.println(Arrays.toString(myList.toArray()));
-		
-		//tests clump method
-		clump(myList);
-		System.out.println(Arrays.toString(myList.toArray()));
-		
-		//tests intersect method
-		List<Integer> a = new ArrayList<Integer>();
-		List<Integer> b = new ArrayList<Integer>();
-		int[] a1 = {1,4,8,9,11,15,17,28,41,59};
-		int[] b1 = {4,7,11,17,19,20,23,28,37,59,81};
-		for(int i:a1) a.add(new Integer(i));
-		for(int i:b1) b.add(new Integer(i));
-		System.out.println(intersect(a, b)); //[4,11,17,28,59]
-		
-		//tests reverse3 method
-		List<Integer> list = new ArrayList<Integer>();
-		Integer[] list1 = {3,8,19,42,7,26,19,-8};
-		for(int g:list1) list.add(g);
-		reverse3(list);
-		System.out.println(Arrays.toString(list.toArray()));
 	}
 	
 	//addStars method takes an ArrayList of strings and adds a "*" after each element
