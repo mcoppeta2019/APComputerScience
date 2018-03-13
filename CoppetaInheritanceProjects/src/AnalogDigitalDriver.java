@@ -1,8 +1,8 @@
-import java.util.ArrayList; //import necessary for lists
-
 //	Analog Digital Driver
 //	Michael Coppeta
 //	Uses loops to manipulate instances of TVs
+
+import java.util.ArrayList; //import necessary for lists
 
 public class AnalogDigitalDriver {
 

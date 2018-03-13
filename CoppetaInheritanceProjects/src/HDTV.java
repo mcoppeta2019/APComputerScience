@@ -3,7 +3,6 @@
 //	This is a subclass of TV that implements Digital to represent an HDTV
 
 public class HDTV extends TV implements Digital {
-
 	
 	//connectHDMI method returns a message unique to the type of TV
 	public String connectHDMI() {
