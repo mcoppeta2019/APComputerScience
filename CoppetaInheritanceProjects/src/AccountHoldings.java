@@ -9,7 +9,7 @@ public class AccountHoldings {
 	//Instance Variables
 	private ArrayList<BankAccount> accounts = new ArrayList<BankAccount>(); //holds accounts
 	
-	//Constructor
+	//Constructor - must take parameter
 	public AccountHoldings(ArrayList<BankAccount> newAccounts) {
 		accounts = newAccounts; //sets accounts to newAccounts parameter
 	}

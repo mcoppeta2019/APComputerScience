@@ -10,11 +10,11 @@ public class ProblemTwoTest {
 	public static void main(String[] args) {
 		
 		//instantiates five accounts, 2 checking and 3 savings
-		CheckingAccount checking1 = new CheckingAccount(1000, 4, 100);
-		CheckingAccount checking2 = new CheckingAccount(4000, 8, 200);
-		SavingsAccount savings1 = new SavingsAccount(10000, 16, .08);
-		SavingsAccount savings2 = new SavingsAccount(40000, 64, .16);
-		SavingsAccount savings3 = new SavingsAccount(160000, 1024, .1);
+		CheckingAccount checking1 = new CheckingAccount(1000, 100);
+		CheckingAccount checking2 = new CheckingAccount(4000, 200);
+		SavingsAccount savings1 = new SavingsAccount(10000, 0.08);
+		SavingsAccount savings2 = new SavingsAccount(40000, 0.16);
+		SavingsAccount savings3 = new SavingsAccount(160000, 0.1);
 		
 		//creates an ArrayList to pass to the AccountHoldings
 		ArrayList<BankAccount> acc = new ArrayList<BankAccount>();
@@ -29,7 +29,7 @@ public class ProblemTwoTest {
 		System.out.println(accounts.totalBalance()); //215000
 		
 		//creates another checking account and adds it to accounts
-		CheckingAccount checking3 = new CheckingAccount(85000, 512, 10);
+		CheckingAccount checking3 = new CheckingAccount(85000, 10);
 		accounts.addAccount(checking3);
 		
 		//checks updated totalBalance

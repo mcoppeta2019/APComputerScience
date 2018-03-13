@@ -9,8 +9,8 @@ public class CheckingAccount extends BankAccount {
 	private double annualFee; //represents the annual fee of the account
 
 	//Constructor
-	public CheckingAccount(double newBalance, int newID, double newAnnualFee) {
-		super(newBalance, newID);
+	public CheckingAccount(double newBalance, double newAnnualFee) {
+		super(newBalance);
 		annualFee = newAnnualFee;
 	}
 	

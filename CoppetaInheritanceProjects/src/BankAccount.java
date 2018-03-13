@@ -4,16 +4,20 @@
 
 public class BankAccount {
 	
-	//Constructor
-	public BankAccount(double newBalance, int newID) {
-		balance = newBalance;
-		id = newID;
-	}
-
+	//Static Variable
+	private static int idCounter = 0; //counter so each new bank account gets an incremented id
+	
 	//Instance Variables
 	
-	private double balance; //amouont of money in account
+	private double balance; //amount of money in account
 	private int id; //identification number
+	
+	//Constructor
+	public BankAccount(double newBalance) {
+		balance = newBalance;
+		id = idCounter;
+		idCounter++;
+	}
 	
 	//Common Behaviors
 	
@@ -30,6 +34,28 @@ public class BankAccount {
 	//viewBalance method returns the current balance
 	public double viewBalance() {
 		return balance;
+	}
+	
+	//Accessors and Mutators
+	
+	//mutator for balance 
+	public void setBalance(double newBalance) {
+		balance = newBalance;
+	}
+	
+	//accessor for balance - identical to viewBalance()
+	public double getBalance() {
+		return balance;
+	}
+	
+	//mutator for id
+	public void setID(int newID) {
+		id = newID;
+	}
+	
+	//accessor for id
+	public int getID() {
+		return id;
 	}
 	
 }

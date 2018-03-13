@@ -8,8 +8,8 @@ public class SavingsAccount extends BankAccount {
 	double interestRate;
 
 	//Constructor - takes interestRate in form 0.xx = xx%
-	public SavingsAccount(double newBalance, int newID, double newInterestRate) {
-		super(newBalance, newID);
+	public SavingsAccount(double newBalance, double newInterestRate) {
+		super(newBalance);
 		interestRate = newInterestRate;
 	}
 	
