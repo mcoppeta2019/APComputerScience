@@ -22,7 +22,7 @@ public class ProblemTwoTest {
 		acc.add(savings1); acc.add(savings2);
 		acc.add(savings3);
 		
-		//instantiates an AccountHoldings object named accounts
+		//instantiates an AccountHoldings object named accounts, passed list of type BankAccount
 		AccountHoldings accounts = new AccountHoldings(acc);
 		
 		//tests the totalBalance method
@@ -34,5 +34,16 @@ public class ProblemTwoTest {
 		
 		//checks updated totalBalance
 		System.out.println(accounts.totalBalance()); //300000
+		
+		//These lines call the instance methods unique to each account
+		checking1.removeAnnualFee(); //900 +
+		checking2.removeAnnualFee(); //3800 +
+		checking3.removeAnnualFee(); //84990 +
+		savings1.addInterest(); //10800 +
+		savings2.addInterest(); //46400 +
+		savings3.addInterest(); //176000 = 322890
+		
+		System.out.println(accounts.totalBalance()); //322890.0
+		
 	}
 }

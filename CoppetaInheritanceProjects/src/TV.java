@@ -4,7 +4,7 @@
 
 public abstract class TV {
 
-	private boolean tvON; //determiens whether tv is on or off
+	private boolean tvON; //Determines whether tv is on or off
 	
 	//accessor for tvON
 	public boolean getTVON() {
